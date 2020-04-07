@@ -1,0 +1,17 @@
+bowl = 0
+try = 6
+sound = []
+
+while bowl < try:
+    bowl += 1
+
+    rice = int(input())
+
+    if rice % 3 == 0:
+        sound.append('Pop')
+    elif rice % 3 != 0 and rice % 2 != 0:
+        sound.append('Snap')
+    else:
+        sound.append('Crackle')
+
+print(' '.join(map(str, sound)))
