@@ -1,0 +1,8 @@
+import re
+
+secret = input()
+flip = secret[::-1]
+
+text = re.sub('[^A-Za-z ]+','',flip)
+
+print(text)
