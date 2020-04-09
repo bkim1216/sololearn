@@ -1,0 +1,11 @@
+number = int(input())
+dividors = input().split()
+
+for dividor in dividors:
+    dividor = int(dividor)
+    if number % dividor != 0:
+        print('not divisible by all')
+        break
+else:
+    print('divisible by all')
+
