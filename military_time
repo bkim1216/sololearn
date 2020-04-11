@@ -4,6 +4,8 @@ def am(time):
     normal = time[0].split(':')
     if int(normal[0]) < 10:
         return f"0{normal[0]}:{normal[1]}"
+    elif int(normal[0]) == 12:
+        return f"00:{normal[1]}"
     else:
         return f"{normal[0]}:{normal[1]}"
 
