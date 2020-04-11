@@ -1,12 +1,21 @@
 time = input().split()
 
-if time[1] == 'AM':
+def am(time):
     normal = time[0].split(':')
     if int(normal[0]) < 10:
-        print(f"0{normal[0]}:{normal[1]}")
+        return f"0{normal[0]}:{normal[1]}"
     else:
-        print(f"{normal[0]}:{normal[1]}")
-        
-elif time[1] == 'PM':
+        return f"{normal[0]}:{normal[1]}"
+
+def pm(time):
     military = time[0].split(':')
-    print(f"{int(military[0]) + 12}:{military[1]}")
+    return f"{int(military[0]) + 12}:{military[1]}"
+
+
+def convert(time):
+    if time[1] == 'AM':
+        return am(time)
+    else:
+        return pm(time)
+
+print(convert(time))
