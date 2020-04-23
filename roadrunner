@@ -1,0 +1,12 @@
+dist_apart = 50
+distance = int(input()) #distance the runner is from safety, speed*time
+speed_runner = int(input()) #distance/time
+speed_coyote = int(input()) #distance/time
+
+time_runner = distance / speed_runner
+time_coyote = (distance+dist_apart) / speed_coyote
+
+if time_runner < time_coyote:
+    print('Meep Meep')
+else:
+    print("Yum")
