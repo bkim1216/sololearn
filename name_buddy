@@ -1,0 +1,10 @@
+members =input().split()
+your_name = input()
+
+
+for member in members:
+    if member[0] == your_name[0]:
+        print('Compare notes')
+        break
+else:
+    print('No such luck')
