@@ -1,0 +1,9 @@
+list = input().split()
+new_list = []
+
+for item in list:
+    item = int(item)
+    if item % 2 == 0:
+        new_list.append(item)
+
+print(*new_list, sep=' ')
